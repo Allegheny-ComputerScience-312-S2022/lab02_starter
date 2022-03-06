@@ -17,10 +17,10 @@ src/proteinDB_build.txt:
     MatchFileFragment --fragment "Add Your Account Name Here" --count 0 --exact
     MatchFileFragment --fragment "TODO" --count 0 --exact
 
-/src/data/uniprot_n_protein.tab:
+src/data/uniprot_n_protein.tab:
     ConfirmFileExists
-    
-/src/data/uniprot_s_protein.tab:
+
+src/data/uniprot_s_protein.tab:
     ConfirmFileExists
 
 
