@@ -1,0 +1,51 @@
+/* Lab 2 Assignment */
+/* Researching and Reporting on Database Tools */
+
+/* Name */
+/* Add Your Name Here */
+
+/* GitHub Account Name */
+/* Add Your Account Name Here */
+
+/* Submission Date */
+/* Date: 14 March 2022 */
+
+/* A database builder file; edit as necessary */
+/* To Run build the database, make sure that your tab data files (obtained from Uniprot) are found in the data/ directory. */
+
+/* Create your tables. Modify the below code to create your tables. */
+
+drop table nprot;
+create table nprot (
+	protID VARCHAR NOT NULL PRIMARY KEY,
+	entryName TODO ,
+	Status TODO ,
+	ProteinName TODO ,
+	GeneName TODO ,
+	Organism TODO ,
+	Length TODO
+);
+
+drop table sprot;
+create table sprot (
+	protID VARCHAR NOT NULL PRIMARY KEY,
+	entryName TODO ,
+	Status TODO ,
+	ProteinName TODO ,
+	GeneName TODO ,
+	Organism TODO ,
+	Length TODO
+);
+
+/* Import your data files. Use the below `.import` code to populate the tables from above. */
+
+/* If your data is not separated by tabs, then change the following line to reflect the delimiter. */
+.separator "\t"
+
+/* find the data files and load them into sqlite3 to populate the above tables.*/
+.import data/uniprot_n_protein.tab nprot
+.import data/uniprot_s_protein.tab sprot
+
+
+/* How to run this builder */
+/* cat proteinBase_build.txt | sqlite3 proteinDB.sqlite3 */
