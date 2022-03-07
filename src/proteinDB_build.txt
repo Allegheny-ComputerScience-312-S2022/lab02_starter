@@ -43,9 +43,9 @@ create table sprot (
 .separator "\t"
 
 /* find the data files and load them into sqlite3 to populate the above tables.*/
-.import data/uniprot_n_protein.tab nprot
-.import data/uniprot_s_protein.tab sprot
+.import data/uniprot-n-protein.tab nprot
+.import data/uniprot-s-protein.tab sprot
 
 
 /* How to run this builder */
-/* cat proteinBase_build.txt | sqlite3 proteinDB.sqlite3 */
+/* cat proteinDB_build.txt | sqlite3 proteinDB.sqlite3 */
